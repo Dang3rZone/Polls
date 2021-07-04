@@ -1,7 +1,7 @@
 <script>
   import Header from './components/header/Header.svelte';
   import Footer from './components/footer/Footer.svelte';
-  import Tabs from './shared/Tabs.svelte';
+  import Tabs from './ui/tabs/Tabs.svelte';
   import CreatePollForm from './components/createPoll/CreatePollForm.svelte';
   import PollList from './components/pollList/PollList.svelte';
 
@@ -27,7 +27,7 @@
   const handleAdd = (e) => {
     const poll = e.detail;
     polls = [poll, ...polls];
-    console.log(polls);
+
     activeItem = 'Current Polls';
   };
 </script>
